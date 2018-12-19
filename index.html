@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>5e Spell Caster</title>
+    <link rel="stylesheet" href="css/styles.css?v=1.0" />
+  </head>
+
+  <body>
+    <script src="js/scripts.js"></script>
+
+    <div>Select the Spell's Level</div>
+    <select name="level-select" id="s-level" onchange="showSpells(this)">
+      <option value=""></option>
+      <option value="cantrips">Cantrip</option>
+      <option value="s1">1st</option>
+      <option value="s2">2nd</option>
+      <option value="s3">3rd</option>
+      <option value="s4">4th</option>
+      <option value="s5">5th</option>
+      <option value="s6">6th</option>
+      <option value="s7">7th</option>
+      <option value="s8">8th</option>
+      <option value="s9">9th</option>
+    </select>
+
+    <div name="select-cantrips" id="cantrips" class="cantrips">
+      <div>Select Cantrip</div>
+      <select name="select-c" id="s0-s" onchange="showChLevels(this)">
+        <option value=""></option>
+        <option value="can-as">Acid Splash</option>
+        <option value="can-ct">Chill Touch</option>
+        <option value="can-cb">Create Bonfire</option>
+        <option value="can-fb">Fire Bolt</option>
+        <option value="can-f">Forstbite</option>
+        <option value="can-i">Infestation</option>
+        <option value="can-ps">Poison Spray</option>
+        <option value="can-prs">Primal Savagery</option>
+        <option value="can-pf">Produce Flame</option>
+        <option value="can-rof">Ray of Forst</option>
+        <option value="can-sf">Sacred Flame</option>
+        <option value="can-sg">Shocking Grasp</option>
+        <option value="can-tw">Thorn Whip</option>
+        <option value="can-tc">Thunderclap</option>
+        <option value="can-ttd">Toll the Dead (d8)</option>
+        <option value="can-ttd2">Toll the Dead (d12)</option>
+        <option value="can-vm">Vicious Mockery</option>
+        <option value="can-wr">Word of Radiance</option>
+      </select>
+    </div>
+
+    <div name="select-char-level" id="c-level" class="char-level">
+      <div>Character Level</div>
+      <select name="sel-char-lvl" id="c-s" onchange="showCastCantrip(this)">
+        <option value=""></option>
+        <option value="1">1st</option>
+        <option value="2">2nd</option>
+        <option value="3">3rd</option>
+        <option value="4">4th</option>
+        <option value="5">5th</option>
+        <option value="6">6th</option>
+        <option value="7">7th</option>
+        <option value="8">8th</option>
+        <option value="9">9th</option>
+        <option value="10">10th</option>
+        <option value="11">11th</option>
+        <option value="12">12th</option>
+        <option value="13">13th</option>
+        <option value="14">14th</option>
+        <option value="15">15th</option>
+        <option value="16">16th</option>
+        <option value="17">17th</option>
+        <option value="18">18th</option>
+        <option value="19">19th</option>
+        <option value="20">20th</option>
+      </select>
+    </div>
+
+    <div name="select-s1" id="s1" class="s1">
+      <div>Select 1st Level Spell</div>
+      <select name="select-s1" id="s1-s" onchange="showLevelCast(this)">
+        <option value=""></option>
+        <option value="s1-aoh">Arms of Hadar</option>
+        <option value="s1-bh">Burning Hands</option>
+        <option value="s1-cata">Catapult</option>
+        <option value="s1-co">Chromatic Orb</option>
+        <option value="s1-cs">Color Spray</option>
+        <option value="s1-cw">Cure Wounds</option>
+        <option value="s1-dw">Dissonant Whispers</option>
+        <option value="s1-et">Earth Tremor</option>
+        <option value="s1-es">Ensnaring Strike</option>
+        <option value="s1-gb">Guiding Bolt</option>
+        <option value="s1-hot">Hail of Thorns</option>
+        <option value="s1-hw">Healing Word</option>
+        <option value="s1-hr">Hellish Rebuke</option>
+        <option value="s1-iw">Inflict Wounds</option>
+        <option value="s1-ros">Ray of Sickness</option>
+        <option value="s1-ss">Searing Smite</option>
+        <option value="s1-ts">Thunderous Smite</option>
+        <option value="s1-tw">Thunderwave</option>
+        <option value="s1-wb">Witch Bolt</option>
+        <option value="s1-ws">Wrathful Smite</option>
+        <option value="s1-zs">Zephyr Strike</option>
+      </select>
+    </div>
+
+    <div name="selectLvlCastAt" id="lvlCast" class="lc">
+      <div>Select Level to Cast Spell at</div>
+      <select name="select-lc" id="s-lc" onchange="showCastSpell(this)">
+        <option value=""></option>
+        <option value="1">1st</option>
+        <option value="2">2nd</option>
+        <option value="3">3rd</option>
+        <option value="4">4th</option>
+        <option value="5">5th</option>
+        <option value="6">6th</option>
+        <option value="7">7th</option>
+        <option value="8">8th</option>
+        <option value="9">9th</option>
+      </select>
+    </div>
+
+    <div><br /><button id="castS" onclick="cast()">Cast Spell</button></div>
+
+    <p id="output"></p>
+  </body>
+</html>
