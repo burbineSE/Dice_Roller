@@ -1,15 +1,29 @@
-#cantrips{
+#cantrips, #s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9, #c-level, #castS, #lvlCast, #PCCastingStat, #PC-CASTSTAT, #CastStatLabel, #CharacterLevelLabel, #chacaterLevel-select{
     display: none;
 }
-#s1{
-    display: none;
+body{
+    background: url("https://litrpgreads.com/wp-content/uploads/2018/10/71a5BsoYYiL.jpg");
+    background-repeat: repeat; 
+    background-size: auto;
+    background-position: center top;
+    padding-top: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 20px;
 }
-#c-level{
-    display: none;
+div{
+    font-size: 22px;
 }
-#castS{
-    display: none;
+option{
+    font-size: 18px;
 }
-#lvlCast{
-    display: none;
+
+#output{
+    font-style: italic;
+    font-weight: bold;
+}
+#form-body{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
